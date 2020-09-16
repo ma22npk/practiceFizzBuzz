@@ -1,0 +1,33 @@
+p{
+font-size: 40px;
+text-align: center;
+}
+
+.btn-inner{
+display: grid;
+place-items: center;
+}
+.btn {
+font-size: 24px;
+display: inline-block;
+padding: .6em 2em;
+margin: 0 0 1em;
+background-image: none;
+background-color: #4CAF50;
+color: #fff;
+text-decoration: none;
+border: none;
+border-radius: 0;
+cursor: pointer;
+-webkit-appearance: none;
+box-shadow: 1px 1px 3px 0 rgba(0,0,0,.2);
+position: relative;
+}
+.btn:hover
+.btn:focus {
+outline: none;
+}
+.btn::-moz-foucus-inner {
+padding: 0;
+border: none;
+}
