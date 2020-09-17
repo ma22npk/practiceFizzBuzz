@@ -24,6 +24,15 @@
   //テストボタン//  ===========================
   document.getElementById("btn").onclick = function () {
 
+//プラスボタン
+  btnPlus.onclick = function () {
+    countUpNumber();
+    checkFizzBuzz();
   }
 
+//マイナスボタン
+  btnMinus.onclick = function () {
+    countDownNumber();
+    checkFizzBuzz();
+  }
 }
