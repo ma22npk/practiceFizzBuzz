@@ -10,6 +10,12 @@
   //3と5の両方の倍数のときには｢FizzBuzz｣とプリントすること。
   const btn = document.getElementById('btn');
   const countNumber = document.querySelector('countNumber');
+
+
+  //3と5の両方の倍数のときには｢FizzBuzz｣とコールする関数
+  const btnPlus = document.getElementById('btnPlus');
+  const btnMinus = document.getElementById('btnMinus');
+  const countNumber = document.getElementById('countNumber');
   let callTxt = document.getElementById('callTxt');
 
 //テキストをFizzとコールする関数
