@@ -13,6 +13,15 @@
   let callTxt = document.getElementById('callTxt');
 
 //テキストをFizzとコールする関数
+
+  //countNumberの数字を１つずつ増やして表示する関数
+  const countUpNumber = function () {
+    countNumber.innerText++;
+  }
+  //countNumberの数字を１つずつ減らして表示する関数
+  const countDownNumber = function () {
+    countNumber.innerText--;
+  }
   const callFizz = function () {
     callTxt.textContent = "fizz";
   }
