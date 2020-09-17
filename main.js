@@ -5,11 +5,6 @@
 {
   //FizzBuzz問題
   //1から100までの数をプリントするプログラムを書け。
-  //繰り返し文で1~100まで出力する
-  //ただし3の倍数のときは数の代わりに｢Fizz｣、5の倍数のときは｢Buzz｣とプリントし、
-  //3と5の両方の倍数のときには｢FizzBuzz｣とプリントすること。
-  const btn = document.getElementById('btn');
-  const countNumber = document.querySelector('countNumber');
 
 
   //3と5の両方の倍数のときには｢FizzBuzz｣とコールする関数
@@ -18,7 +13,6 @@
   const countNumber = document.getElementById('countNumber');
   let callTxt = document.getElementById('callTxt');
 
-//テキストをFizzとコールする関数
 
   //countNumberの数字を１つずつ増やして表示する関数
   const countUpNumber = function () {
@@ -35,7 +29,6 @@
   const callFizz = function () {
     callTxt.textContent = "Fizz";
   }
-//テキストをBuzzとコールする関数
   //5の倍数のときは
   //テキストをBuzzとコールする関数
   const callBuzz = function () {
@@ -50,8 +43,28 @@
     callTxt.textContent = "・・・";
   }
 
-  //テストボタン//  ===========================
-  document.getElementById("btn").onclick = function () {
+  const checkFizzBuzz = function () {
+    let countUpValue = countNumber.innerText;
+    //3と5の両方の倍数のときには
+    if (countUpValue % 15 === 0) {
+      //｢FizzBuzz｣と表示
+      callFizzBuzz();
+    } //3の倍数のときは
+    else if (countUpValue % 3 === 0) {
+      //｢Fizz｣と表示
+      callFizz();
+    }
+    //5の倍数のときは
+    else if (countUpValue % 5 === 0) {
+      //｢Buzz｣と表示
+      callBuzz();
+    }
+    //それ以外だったら特にコールしない
+    else {
+      callNon();
+    }
+  }
+
 
 //プラスボタン
   btnPlus.onclick = function () {
@@ -64,4 +77,10 @@
     countDownNumber();
     checkFizzBuzz();
   }
+
+
+
+
+
+
 }
