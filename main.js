@@ -22,12 +22,26 @@
   const countDownNumber = function () {
     countNumber.innerText--;
   }
+
+
+  //3の倍数のときは
+  //テキストをFizzとコールする関数
   const callFizz = function () {
-    callTxt.textContent = "fizz";
+    callTxt.textContent = "Fizz";
   }
 //テキストをBuzzとコールする関数
+  //5の倍数のときは
+  //テキストをBuzzとコールする関数
   const callBuzz = function () {
     callTxt.textContent = "Buzz";
+  }
+  //テキストをfizzBuzzとコールする関数
+  const callFizzBuzz = function () {
+    callTxt.textContent = "Fizz Buzz";
+  }
+  //テキストをfizzBuzzとコールする関数
+  const callNon = function () {
+    callTxt.textContent = "・・・";
   }
 
   //テストボタン//  ===========================
