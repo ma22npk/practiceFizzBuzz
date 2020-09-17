@@ -27,13 +27,60 @@ p {
   position: relative;
 }
 
-.btn:hover
-.btn:focus {
+.btn:hover .btn:focus {
   outline: none;
 }
 
 .btn::-moz-foucus-inner {
   padding: 0;
   border: none;
+}
+
+.arrow_box {
+  width: 250px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #000000;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #fff;
+  border-width: 30px;
+  margin-top: -30px;
+}
+
+.arrow_box:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-left-color: #000000;
+  border-width: 31px;
+  margin-top: -31px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .face {
+  font-size: 150px;
 }
 /*# sourceMappingURL=style.css.map */
